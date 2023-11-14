@@ -1,0 +1,60 @@
+/* mobile */
+.presentation {
+  margin-top: 37px;
+  background-color: var(--background-dark);
+  padding: 25px 14px;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
+.presentation::before {
+  content: '';
+  display: block;
+  background-color: var(--detail-section);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -33px;
+}
+
+.presentation__menu {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  color: var(--nav-menu-disable);
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.presentation__menu li {
+  text-transform: uppercase;
+}
+
+.presentation__container::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: var(--nav-menu-detail);
+  margin-top: 15px;
+}
+
+.presentation__menu .active {
+  padding: 10px 17px;
+  color: var(--nav-menu);
+  background-color: var(--nav-button-active);
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.presentation__menu::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.presentation__menu {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

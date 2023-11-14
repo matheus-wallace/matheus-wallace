@@ -1,0 +1,74 @@
+:root {
+  --white: #ffffff;
+  --text-decoration: #006688;
+  --background-dark: #111118;
+  --subtitle: #191919;
+  --title: #141414;
+  --reglar-text: #3d3d3d;
+  --nav-menu: #89a1f7;
+  --nav-menu-disable: #4c5268;
+  --footer-bakcground: #111111;
+  --hover-button: #606ef0;
+  --border-contact: #55abc8;
+  --github-button: #21262d;
+  --figma-button: #307d5d;
+  --nav-button-active: #191924;
+  --nav-menu-detail: #d9d9d9;
+  --detail-section: #4b59d54d;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.text-decoration {
+  color: #006688;
+}
+
+.background-dark {
+  color: #111118;
+}
+
+.subtitle {
+  color: #191919;
+}
+
+.title {
+  color: #141414;
+}
+
+.regular-text {
+  color: #3d3d3d;
+}
+
+.nav-menu {
+  color: #89a1f7;
+}
+
+.nav-menu-disable {
+  color: #4c5268;
+}
+
+.footer-bakcground {
+  color: #111111;
+}
+
+.hover-button {
+  color: #606ef0;
+}
+
+.border-contact {
+  color: #55abc8;
+}
+
+.github-button {
+  color: #21262d;
+}
+
+.figma-button {
+  color: #307d5d;
+}
+
+.nav-button-active {
+  color: #191924;
+}

@@ -1,0 +1,34 @@
+.bio {
+  text-align: center;
+}
+.bio__subtitle {
+  margin: 35px 4px 27px 4px;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  gap: 4px;
+}
+
+.bio__subtitle::before,
+.bio__subtitle::after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-decoration);
+  position: relative;
+  top: 12px;
+}
+.bio__avatar {
+  margin: 27px 0;
+}
+
+.bio__name {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.bio__description {
+  line-height: 21.8px;
+  margin: 10px;
+}

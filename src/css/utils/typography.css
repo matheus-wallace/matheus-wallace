@@ -1,0 +1,71 @@
+/* mobile */
+
+/* 10 */
+.font_1_xxxs {
+  font: 400 0.625rem 'Inter', sans-serif;
+}
+
+/* 12 */
+.font_1_xxs-m {
+  font: 500 0.75rem 'Inter', sans-serif;
+}
+
+/* 12 */
+.font_1_xxs-b {
+  font: 700 0.75rem 'Inter', sans-serif;
+}
+
+/* 14 */
+.font_1_xs {
+  font: 400 0.875rem 'Inter', sans-serif;
+}
+
+/* 14 */
+.font_1_xs-b {
+  font: 700 0.875rem 'Inter', sans-serif;
+}
+
+/* 16 */
+.font_1_s {
+  font: 400 1rem 'Inter', sans-serif;
+}
+
+/* 16 */
+.font_1_s-b {
+  font: 700 1rem 'Inter', sans-serif;
+}
+
+/* 18 */
+.font_1_m-m {
+  font: 500 1.125rem 'Inter', sans-serif;
+}
+
+/* 18 */
+.font_1_m-b {
+  font: 700 1.125rem 'Inter', sans-serif;
+}
+
+/* 22 */
+.font_1_xl {
+  font: 400 1.375rem 'Inter', sans-serif;
+}
+
+/* 22 */
+.font_1_xl-m {
+  font: 500 1.375rem 'Inter', sans-serif;
+}
+
+/* 22 */
+.font_1_xl-b {
+  font: 700 1.375rem 'Inter', sans-serif;
+}
+
+/* 28 */
+
+.font_1_l-m {
+  font: 500 1.75rem 'Inter', sans-serif;
+}
+
+.font_1_l-b {
+  font: 700 1.75rem 'Inter', sans-serif;
+}

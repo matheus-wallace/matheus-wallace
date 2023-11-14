@@ -1,0 +1,12 @@
+.techs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.techs li {
+  padding: 24px 0px;
+  text-align: center;
+  border-radius: 7px;
+  border: 2px solid var(--text-decoration);
+}

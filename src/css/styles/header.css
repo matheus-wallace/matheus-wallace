@@ -1,0 +1,13 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 9em;
+  padding: 20px 35px;
+  background-color: #111118;
+  border-radius: 10px;
+}
+
+.header__menu {
+  cursor: pointer;
+}

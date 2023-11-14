@@ -1,0 +1,8 @@
+.card {
+  background-color: var(--background-dark);
+}
+
+.card__item {
+  padding: 50px;
+  border: 2px solid var(--text-decoration);
+}
