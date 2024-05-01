@@ -1,5 +1,4 @@
-import React from 'react';
-import '../css/styles/presentation.css';
+import '../../css/styles/presentation.css';
 
 const Presentation = () => {
   return (

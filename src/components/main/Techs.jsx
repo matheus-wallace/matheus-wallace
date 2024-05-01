@@ -1,20 +1,20 @@
-import React from 'react';
-import Subtitle from './Subtitle';
-import '../css/styles/techs.css';
-import '../css/styles/card.css';
+import Subtitle from '../utils/Subtitle';
+import Icon from '../utils/Icon';
+import '../../css/styles/techs.css';
+import '../../css/styles/card.css';
 
 const Techs = () => {
   return (
     <section className="default-padding">
       <Subtitle title="Tecnologias" />
       <ul className="techs">
-        {/* <li className="card background-dark">
+        <li className="card background-dark">
           <div>
-            <img src={require('../icons/html-mobile.svg').default} alt="html icon" />
+            <Icon path="../icons/html-mobile.svg" alt="html icon" />
           </div>
           <p className="white font_1_xs-b">HTML</p>
         </li>
-        <li className="card background-dark">
+        {/* <li className="card background-dark">
           <div>
             <img src={require('../icons/css-mobile.svg').default} alt="CSS icon" />
           </div>
@@ -46,10 +46,6 @@ const Techs = () => {
         </li> */}
       </ul>
     </section>
-
-    //   {
-    //
-    //   }
   );
 };
 

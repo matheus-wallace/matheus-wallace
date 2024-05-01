@@ -1,4 +1,4 @@
-import '../css/styles/header.css';
+import '../../css/styles/header.css';
 import Menu from './Menu';
 
 const Header = () => {
@@ -10,9 +10,7 @@ const Header = () => {
             MW<span className="font_1_xl-b white">SP</span>
           </p>
         </a>
-        <div className="header__menu">
-          <Menu />
-        </div>
+        <Menu />
       </div>
     </header>
   );
