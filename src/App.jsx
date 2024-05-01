@@ -1,8 +1,8 @@
 import './css/index.css';
-import Header from './components/Header';
-import Bio from './components/Bio';
-import Techs from './components/Techs';
-import Presentation from './components/Presentation';
+import Header from './components/menu/Header';
+import Bio from './components/main/Bio';
+import Techs from './components/main/Techs';
+import Presentation from './components/main/Presentation';
 function App() {
   return (
     <div className="App">
