@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import HumburguerMenu from '../../assets/icons/humburger.svg';
+import HumburguerMenu from 'assets/icons/humburger.svg';
 
 const Menu = () => {
   const [menu, setMenu] = useState(false);

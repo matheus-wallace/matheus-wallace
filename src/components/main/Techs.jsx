@@ -1,7 +1,7 @@
-import Subtitle from '../utils/Subtitle';
-import Icon from '../utils/Icon';
-import '../../css/styles/techs.css';
-import '../../css/styles/card.css';
+import Subtitle from 'components/utils/Subtitle';
+import Icon from 'components/utils/Icon';
+import 'css/styles/techs.css';
+import 'css/styles/card.css';
 
 const Techs = () => {
   return (
