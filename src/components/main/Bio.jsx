@@ -2,7 +2,7 @@ import photo from '../../assets/img/Photo.png';
 import Subtitle from '../utils/Subtitle';
 import '../../css/styles/bio.css';
 import { useEffect, useState } from 'react';
-import updateAge from '../../ toolBox/updateAge';
+import updateAge from '../../toolBox/updateAge';
 
 const Bio = () => {
   const [age, setAge] = useState(23);
