@@ -1,7 +1,7 @@
 import 'css/index.css';
 import Header from 'components/menu/Header';
 import Bio from 'components/main/Bio';
-import Techs from 'components/main/Techs';
+import Techs from './components/main/techs/Techs';
 import Presentation from 'components/main/Presentation';
 function App() {
   return (
