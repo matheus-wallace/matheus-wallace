@@ -1,3 +1,3 @@
 const commitLintConf = { extends: ["@commitlint/config-conventional"] };
 
-export default commitLintConf;
+module.exports = commitLintConf;
