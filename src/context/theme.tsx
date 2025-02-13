@@ -14,8 +14,8 @@ export const darkTheme: DefaultTheme = {
   },
   sizes: {
     fonts: {
-      sm: "2.265rem",
-      md: "2.265rem",
+      sm: "1rem",
+      md: "1.375rem",
       lg: "2.265rem",
     },
     spacing: {

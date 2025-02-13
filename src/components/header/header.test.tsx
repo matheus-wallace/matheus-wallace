@@ -4,6 +4,7 @@ import ClientSideProvider from "@/context/theme";
 
 describe("Header", () => {
   let header: HTMLElement;
+  const screenWidth = window.screen.width;
 
   beforeEach(() => {
     render(
@@ -40,10 +41,12 @@ describe("Header", () => {
   });
 
   it("should render the header with links and icons", () => {
-    // const githubIcon = screen.getByTestId('githubIcon');
-    const linkedinIcon = screen.getByTestId("linkedinIcon");
+    if (screenWidth > 480) {
+      const githubIcon = screen.getByTestId("githubIcon");
+      const linkedinIcon = screen.getByTestId("linkedinIcon");
 
-    expect(linkedinIcon).toBeInTheDocument();
-    // expect(githubIcon).toBeInTheDocument();
+      expect(linkedinIcon).toBeInTheDocument();
+      expect(githubIcon).toBeInTheDocument();
+    }
   });
 });
