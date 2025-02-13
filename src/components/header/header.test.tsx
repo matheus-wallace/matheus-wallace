@@ -40,10 +40,10 @@ describe("Header", () => {
   });
 
   it("should render the header with links and icons", () => {
-    // const githubIcon = screen.getByTestId('githubIcon');
+    const githubIcon = screen.getByTestId("githubIcon");
     const linkedinIcon = screen.getByTestId("linkedinIcon");
 
     expect(linkedinIcon).toBeInTheDocument();
-    // expect(githubIcon).toBeInTheDocument();
+    expect(githubIcon).toBeInTheDocument();
   });
 });
