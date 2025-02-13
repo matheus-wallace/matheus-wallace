@@ -13,11 +13,10 @@
     "lint:prettier:check": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
     "lint:eslint:check": "next lint --dir .",
-    "commit": "cz",
-    "prepare": "husky install"
+    "commit": "cz"
   },
   "dependencies": {
-    "next": "15.1.6",
+    "next": "^15.1.7",
     "next-images": "^1.8.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -66,8 +65,5 @@
     "**/*.{ts,tsx}": [
       "npm run test -- --findRelatedTests"
     ]
-  },
-  "resolutions": {
-    "punycode": "^2.3.1"
   }
 }
