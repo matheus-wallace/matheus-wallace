@@ -11,6 +11,7 @@ export const darkTheme: DefaultTheme = {
     backgroundColor: "#111118",
     detailBlue: "#006688",
     white: "#FFFFFF",
+    gray: "#262626",
   },
   sizes: {
     fonts: {
@@ -19,11 +20,13 @@ export const darkTheme: DefaultTheme = {
       lg: "2.265rem",
     },
     spacing: {
-      xs: ".7080rem",
-      sm: ".80rem",
+      sm: ".7080rem",
+      xsm: ".80rem",
       md: "1rem",
-      lg: "1.25rem",
-      xl: "2rem",
+      xmd: "1.25rem",
+      lg: "2rem",
+      xxlg: "6rem",
+      xxxlg: "12rem",
     },
   },
   weights: {
@@ -32,9 +35,9 @@ export const darkTheme: DefaultTheme = {
     bold: 700,
   },
   breakpoints: {
-    mobile: "480px",
-    tablet: "780",
-    desktop: "1024px",
+    mobile: "max-width: 480px",
+    tablet: "max-width: 780px",
+    desktop: "max-width: 1024px",
   },
 };
 

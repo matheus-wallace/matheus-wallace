@@ -6,6 +6,7 @@ declare module "styled-components" {
       backgroundColor: string;
       detailBlue: string;
       white: string;
+      gray: string;
     };
     sizes: {
       fonts: {
@@ -14,12 +15,14 @@ declare module "styled-components" {
         lg: string;
       };
       spacing: {
-        xs: string;
         sm: string;
+        xsm: string;
         md: string;
+        xmd: string;
         lg: string;
-        xl: string;
         lg: string;
+        xxlg: string;
+        xxxlg: string;
       };
     };
     weights: {
