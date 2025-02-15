@@ -27,5 +27,10 @@ declare module "styled-components" {
       medium: number;
       bold: number;
     };
+    breakpoints: {
+      mobile: string;
+      tablet: string;
+      desktop: string;
+    };
   }
 }

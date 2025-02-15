@@ -4,7 +4,7 @@ import ClientSideProvider from "@/context/theme";
 import Header from "@/components/header";
 
 export const metadata: Metadata = {
-  title: "Matheus Wallace da Silva Pereira",
+  title: "Matheus Wallace | Desenvolvedor Frontend",
   description: "Personal portifólio",
 };
 
@@ -15,12 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClientSideProvider>
-        <body>
+      <body>
+        <ClientSideProvider>
           <Header />
           {children}
-        </body>
-      </ClientSideProvider>
+        </ClientSideProvider>
+      </body>
     </html>
   );
 }
