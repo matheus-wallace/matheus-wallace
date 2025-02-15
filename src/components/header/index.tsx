@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   HeaderContainer,
@@ -5,17 +7,17 @@ import {
   HeaderLogo,
   IconContainer,
   IconLink,
-  TextBlue,
 } from "./style";
 import Icon from "../Icon";
 import Link from "next/link";
+import { TextBlue } from "../TextBlue/style";
 
 const Header = () => {
   return (
     <HeaderContainer>
       <HeaderContent data-testid="header">
-        <HeaderLogo style={{ margin: "0", padding: "0" }}>
-          <Link href={"/"}>
+        <HeaderLogo>
+          <Link href={"/"} aria-label="Página inicial">
             <TextBlue data-testid="textBlue">MW</TextBlue>SP
           </Link>
         </HeaderLogo>
