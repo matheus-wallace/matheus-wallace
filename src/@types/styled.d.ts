@@ -1,6 +1,6 @@
-import "styled-components";
+import 'styled-components';
 
-declare module "styled-components" {
+declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
       backgroundColor: string;
@@ -26,6 +26,11 @@ declare module "styled-components" {
       normal: number;
       medium: number;
       bold: number;
+    };
+    breakpoints: {
+      mobile: string;
+      tablet: string;
+      desktop: string;
     };
   }
 }

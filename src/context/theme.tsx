@@ -31,6 +31,11 @@ export const darkTheme: DefaultTheme = {
     medium: 600,
     bold: 700,
   },
+  breakpoints: {
+    mobile: "480px",
+    tablet: "780",
+    desktop: "1024px",
+  },
 };
 
 const ClientSideProvider = ({ children }: ClientSideProviderProps) => {
