@@ -8,7 +8,6 @@ export interface IconProps {
 
 const Icon: React.FC<IconProps> = ({ name, ...props }) => {
   const IconSrc = iconMap[name].src;
-  console.log(IconSrc);
 
   return <IconContainer src={IconSrc} {...props} />;
 };
