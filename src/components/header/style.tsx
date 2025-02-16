@@ -7,8 +7,7 @@ interface HeaderProps {
 export const HeaderContainer = styled.header<HeaderProps>`
   @media (${({ theme }) => theme.breakpoints.mobile}) {
     padding: ${({ theme }) => theme.sizes.spacing.xmd};
-    background-color: ${({ theme, $isOpen }) =>
-      $isOpen ? theme.colors.backgroundColor : theme.colors.white};
+    background-color: ${({ theme, $isOpen }) => ($isOpen ? theme.colors.backgroundColor : theme.colors.white)};
     height: ${({ $isOpen }) => ($isOpen ? "100vh" : "auto")};
   }
 `;
@@ -16,21 +15,17 @@ export const HeaderContainer = styled.header<HeaderProps>`
 export const HeaderContent = styled.div<HeaderProps>`
   display: flex;
   width: 100%;
-  padding: ${({ theme }) => theme.sizes.spacing.lg}
-    ${({ theme }) => theme.sizes.spacing.xxxlg};
+  padding: ${({ theme }) => theme.sizes.spacing.lg} ${({ theme }) => theme.sizes.spacing.xxxlg};
   justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme, $isOpen }) =>
-    $isOpen ? theme.colors.white : theme.colors.backgroundColor};
+  background-color: ${({ theme, $isOpen }) => ($isOpen ? theme.colors.white : theme.colors.backgroundColor)};
 
   @media (${({ theme }) => theme.breakpoints.tablet}) {
-    padding: ${({ theme }) => theme.sizes.spacing.lg}
-      ${({ theme }) => theme.sizes.spacing.xxlg};
+    padding: ${({ theme }) => theme.sizes.spacing.lg} ${({ theme }) => theme.sizes.spacing.xxlg};
   }
   @media (${({ theme }) => theme.breakpoints.mobile}) {
     border-radius: ${({ theme }) => theme.sizes.spacing.md};
-    padding: ${({ theme }) => theme.sizes.spacing.lg}
-      ${({ theme }) => theme.sizes.spacing.lg};
+    padding: ${({ theme }) => theme.sizes.spacing.lg} ${({ theme }) => theme.sizes.spacing.lg};
   }
 `;
 
@@ -54,7 +49,6 @@ export const HeaderLogo = styled.h1<HeaderProps>`
 
   @media (${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ theme }) => theme.sizes.fonts.md};
-    color: ${({ theme, $isOpen }) =>
-      $isOpen ? theme.colors.gray : theme.colors.white};
+    color: ${({ theme, $isOpen }) => ($isOpen ? theme.colors.gray : theme.colors.white)};
   }
 `;

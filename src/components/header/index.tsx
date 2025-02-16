@@ -1,13 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import {
-  HeaderContainer,
-  HeaderContent,
-  HeaderLogo,
-  IconContainer,
-  IconLink,
-} from "./style";
+import { HeaderContainer, HeaderContent, HeaderLogo, IconContainer, IconLink } from "./style";
 import Icon from "../Icon";
 import Link from "next/link";
 import { TextBlue } from "../TextBlue/style";
@@ -17,14 +11,13 @@ import Menu from "../menu";
 const Header = () => {
   const { width } = useWindowSize();
   const [openMenu, setOpenMenu] = useState<boolean>(false);
-  const [isMobile, setIsMobile] = useState<boolean>(false); // Controla o estado mobile
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    // Definir o estado isMobile e controlar o estado openMenu quando a largura da tela mudar
     const mobile = width <= 480;
     setIsMobile(mobile);
     if (!mobile) {
-      setOpenMenu(false); // Fecha o menu se a largura for maior que 480
+      setOpenMenu(false);
     }
   }, [width]);
 
@@ -39,27 +32,16 @@ const Header = () => {
 
         <IconContainer>
           {isMobile ? (
-            <IconLink
-              data-testid="menu"
-              onClick={() => setOpenMenu((prev) => !prev)}
-            >
+            <IconLink data-testid="menu" onClick={() => setOpenMenu((prev) => !prev)}>
               <Icon name={openMenu ? "closeMenu" : "menuHamburguer"} />
             </IconLink>
           ) : (
             <>
-              <IconLink
-                href="https://github.com/matheus-wallace"
-                data-testid="githubIcon"
-                target="_blank"
-              >
+              <IconLink href="https://github.com/matheus-wallace" data-testid="githubIcon" target="_blank">
                 <Icon name={"github"} />
               </IconLink>
 
-              <IconLink
-                href="https://www.linkedin.com/in/matheus-wallace"
-                data-testid="linkedinIcon"
-                target="_blank"
-              >
+              <IconLink href="https://www.linkedin.com/in/matheus-wallace" data-testid="linkedinIcon" target="_blank">
                 <Icon name={"linkedin"} />
               </IconLink>
             </>
