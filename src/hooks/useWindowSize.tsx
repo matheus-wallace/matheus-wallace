@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 
 interface SizesState {
@@ -12,20 +13,12 @@ const useWindowSize = () => {
   });
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
-
     const handleResize = () => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-      }, 3000);
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
     };
 
     window.addEventListener("resize", handleResize);
-    return () => {
-      clearTimeout(timeoutId);
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return windowSize;
