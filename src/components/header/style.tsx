@@ -1,54 +1,60 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.header`
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    padding: ${({ theme }) => theme.sizes.spacing.lg};
-    border-radius: ${({ theme }) => theme.sizes.spacing.lg};
+interface HeaderProps {
+  $isOpen: boolean;
+}
+
+export const HeaderContainer = styled.header<HeaderProps>`
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
+    padding: ${({ theme }) => theme.sizes.spacing.xmd};
+    background-color: ${({ theme, $isOpen }) =>
+      $isOpen ? theme.colors.backgroundColor : theme.colors.white};
+    height: ${({ $isOpen }) => ($isOpen ? "100vh" : "auto")};
   }
 `;
 
-export const HeaderContent = styled.div`
+export const HeaderContent = styled.div<HeaderProps>`
   display: flex;
   width: 100%;
-  padding: ${({ theme }) => theme.sizes.spacing.xl};
-  justify-content: space-around;
+  padding: ${({ theme }) => theme.sizes.spacing.lg}
+    ${({ theme }) => theme.sizes.spacing.xxxlg};
+  justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.backgroundColor};
+  background-color: ${({ theme, $isOpen }) =>
+    $isOpen ? theme.colors.white : theme.colors.backgroundColor};
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (${({ theme }) => theme.breakpoints.tablet}) {
+    padding: ${({ theme }) => theme.sizes.spacing.lg}
+      ${({ theme }) => theme.sizes.spacing.xxlg};
+  }
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
     border-radius: ${({ theme }) => theme.sizes.spacing.md};
+    padding: ${({ theme }) => theme.sizes.spacing.lg}
+      ${({ theme }) => theme.sizes.spacing.lg};
   }
 `;
 
 export const IconContainer = styled.div`
   display: flex;
   align-items: center;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    display: none;
-  }
 `;
 
 export const IconLink = styled.a`
-  margin-right: ${({ theme }) => theme.sizes.spacing.lg};
+  margin-right: ${({ theme }) => theme.sizes.spacing.xmd};
   &:last-child {
     margin-right: 0;
   }
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-  }
 `;
 
-export const HeaderLogo = styled.h1`
+export const HeaderLogo = styled.h1<HeaderProps>`
   display: inline;
   color: ${({ theme }) => theme.colors.white};
   text-transform: uppercase;
   font-size: ${({ theme }) => theme.sizes.fonts.lg};
 
-  @media (max-width: 768px) {
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ theme }) => theme.sizes.fonts.md};
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 20px;
+    color: ${({ theme, $isOpen }) =>
+      $isOpen ? theme.colors.gray : theme.colors.white};
   }
 `;

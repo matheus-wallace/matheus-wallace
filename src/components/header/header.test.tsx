@@ -1,10 +1,10 @@
+import React from "react";
 import { render, screen } from "@testing-library/react";
 import Header from ".";
-import ClientSideProvider from "@/context/theme";
+import ClientSideProvider from "../../context/theme";
 
 describe("Header", () => {
   let header: HTMLElement;
-  const screenWidth = window.screen.width;
 
   beforeEach(() => {
     render(
@@ -23,8 +23,8 @@ describe("Header", () => {
       display: "flex",
       width: "100%",
       "background-color": "#111118",
-      "justify-content": "space-around",
-      padding: "2rem",
+      "justify-content": "space-between",
+      padding: "2rem 12rem",
     };
 
     Object.entries(expectedStyles).forEach(([property, value]) => {
@@ -41,12 +41,10 @@ describe("Header", () => {
   });
 
   it("should render the header with links and icons", () => {
-    if (screenWidth > 480) {
-      const githubIcon = screen.getByTestId("githubIcon");
-      const linkedinIcon = screen.getByTestId("linkedinIcon");
+    const githubIcon = screen.getByTestId("githubIcon");
+    const linkedinIcon = screen.getByTestId("linkedinIcon");
 
-      expect(linkedinIcon).toBeInTheDocument();
-      expect(githubIcon).toBeInTheDocument();
-    }
+    expect(linkedinIcon).toBeInTheDocument();
+    expect(githubIcon).toBeInTheDocument();
   });
 });
