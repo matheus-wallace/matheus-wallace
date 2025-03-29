@@ -1,7 +1,15 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { HeaderContainer, HeaderContent, HeaderLogo, IconContainer, IconLink } from "./style";
+import {
+  HeaderContainer,
+  HeaderContent,
+  HeaderLogo,
+  IconContainer,
+  IconLink,
+  LangagueSwicher,
+  LinksContainer,
+} from "./style";
 import Icon from "../Icon";
 import Link from "next/link";
 import { TextBlue } from "../TextBlue/style";
@@ -14,7 +22,7 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const { language, setLanguage } = useLanguage();
-  console.log(language);
+
   useEffect(() => {
     const mobile = width <= 480;
     setIsMobile(mobile);
@@ -39,26 +47,24 @@ const Header = () => {
         <IconContainer>
           {isMobile ? (
             <IconLink data-testid="menu" onClick={() => setOpenMenu((prev) => !prev)}>
-              <Icon name={openMenu ? "CloseMenu" : "MenuHamburguer"} />
+              <LinksContainer>
+                <Icon name={openMenu ? "CloseMenu" : "MenuHamburguer"} />
+                <LangagueSwicher onClick={changeLanguage}>{language === "pt" ? "🇧🇷" : "🇺🇸"}</LangagueSwicher>
+              </LinksContainer>
             </IconLink>
           ) : (
             <>
               <IconLink href="https://github.com/matheus-wallace" data-testid="githubIcon" target="_blank">
                 <Icon name={"Github"} />
               </IconLink>
-
               <IconLink href="https://www.linkedin.com/in/matheus-wallace" data-testid="linkedinIcon" target="_blank">
                 <Icon name={"Linkedin"} />
               </IconLink>
-
-              <div>
-                <button onClick={changeLanguage}>{language === "pt" ? "🇧🇷" : "🇺🇸"}</button>
-              </div>
+              <LangagueSwicher onClick={changeLanguage}>{language === "pt" ? "🇧🇷" : "🇺🇸"}</LangagueSwicher>
             </>
           )}
         </IconContainer>
       </HeaderContent>
-
       {openMenu && isMobile && <Menu $isOpen={openMenu} />}
     </HeaderContainer>
   );
