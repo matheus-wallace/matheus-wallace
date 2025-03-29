@@ -10,6 +10,7 @@ declare module "styled-components" {
       softGray: string;
       lightGray: string;
       darkGray: string;
+      darkBlue: string;
     };
     sizes: {
       fonts: {
@@ -42,6 +43,7 @@ declare module "styled-components" {
       mobile: string;
       tablet: string;
       desktop: string;
+      desktopNumber: number;
     };
   }
 }
