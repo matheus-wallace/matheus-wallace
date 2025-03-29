@@ -6,10 +6,6 @@ interface HeaderProps {
 
 export const HeaderContainer = styled.header<HeaderProps>`
   @media (${({ theme }) => theme.breakpoints.mobile}) {
-    /* transition:
-      transform 0.3s ease-in-out,
-      background-color 0.3s ease-in-out;
-    transform: ${({ $isOpen }) => ($isOpen ? "translateY(0)" : "translateY(-100%)")}; */
     padding: ${({ theme }) => theme.sizes.spacing.xmd};
     background-color: ${({ theme, $isOpen }) => ($isOpen ? theme.colors.backgroundColor : theme.colors.white)};
     height: ${({ $isOpen }) => ($isOpen ? "100vh" : "auto")};
@@ -54,5 +50,21 @@ export const HeaderLogo = styled.h1<HeaderProps>`
   @media (${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ theme }) => theme.sizes.fonts.md};
     color: ${({ theme, $isOpen }) => ($isOpen ? theme.colors.gray : theme.colors.white)};
+  }
+`;
+
+export const LinksContainer = styled.nav`
+  display: flex;
+  align-items: center;
+  gap: ${({ theme }) => theme.sizes.fonts.ssm};
+`;
+
+export const LangagueSwicher = styled.button`
+  font-size: ${({ theme }) => theme.sizes.fonts.md};
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: ${({ theme }) => theme.sizes.fonts.md};
   }
 `;
