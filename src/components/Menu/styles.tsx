@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const MenuContainer = styled.div`
+export interface MenuProps {
+  $isOpen: boolean;
+}
+
+export const MenuContainer = styled.div<MenuProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,4 +12,6 @@ export const MenuContainer = styled.div`
   padding-top: ${({ theme }) => theme.sizes.spacing.xmd};
 `;
 
-export const MenuContent = styled.div``;
+export const MenuSection = styled.section`
+  margin-bottom: ${({ theme }) => theme.sizes.spacing.xxmd};
+`;

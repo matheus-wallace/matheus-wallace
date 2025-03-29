@@ -2,6 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import Header from ".";
 import ClientSideProvider from "../../context/theme";
+import { LanguageProvider } from "@/context/translations";
 
 describe("Header", () => {
   let header: HTMLElement;
@@ -9,7 +10,9 @@ describe("Header", () => {
   beforeEach(() => {
     render(
       <ClientSideProvider>
-        <Header />
+        <LanguageProvider>
+          <Header />
+        </LanguageProvider>
       </ClientSideProvider>,
     );
 
