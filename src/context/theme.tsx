@@ -15,6 +15,7 @@ export const darkTheme: DefaultTheme = {
   },
   sizes: {
     fonts: {
+      ssm: "0.8rem",
       sm: "1rem",
       md: "1.375rem",
       lg: "2.265rem",
@@ -24,6 +25,7 @@ export const darkTheme: DefaultTheme = {
       xsm: ".80rem",
       md: "1rem",
       xmd: "1.25rem",
+      xxmd: "1.875rem",
       lg: "2rem",
       xxlg: "6rem",
       xxxlg: "12rem",

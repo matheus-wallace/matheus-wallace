@@ -6,7 +6,7 @@ import Icon from "../Icon";
 import Link from "next/link";
 import { TextBlue } from "../TextBlue/style";
 import useWindowSize from "@/hooks/useWindowSize";
-import Menu from "../menu";
+import Menu from "../Menu";
 
 const Header = () => {
   const { width } = useWindowSize();
@@ -33,23 +33,23 @@ const Header = () => {
         <IconContainer>
           {isMobile ? (
             <IconLink data-testid="menu" onClick={() => setOpenMenu((prev) => !prev)}>
-              <Icon name={openMenu ? "closeMenu" : "menuHamburguer"} />
+              <Icon name={openMenu ? "CloseMenu" : "MenuHamburguer"} />
             </IconLink>
           ) : (
             <>
               <IconLink href="https://github.com/matheus-wallace" data-testid="githubIcon" target="_blank">
-                <Icon name={"github"} />
+                <Icon name={"Github"} />
               </IconLink>
 
               <IconLink href="https://www.linkedin.com/in/matheus-wallace" data-testid="linkedinIcon" target="_blank">
-                <Icon name={"linkedin"} />
+                <Icon name={"Linkedin"} />
               </IconLink>
             </>
           )}
         </IconContainer>
       </HeaderContent>
 
-      {openMenu && isMobile && <Menu />}
+      {openMenu && isMobile && <Menu $isOpen={openMenu} />}
     </HeaderContainer>
   );
 };

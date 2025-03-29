@@ -7,7 +7,7 @@ describe("Icon Component", () => {
   beforeAll(() => {
     render(
       <ClientSideProvider>
-        <Icon name={"github"} />
+        <Icon name={"Github"} />
       </ClientSideProvider>,
     );
     icon = screen.getByRole("img");
