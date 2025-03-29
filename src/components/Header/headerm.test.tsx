@@ -2,6 +2,7 @@ import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 import Header from "./";
 import ClientSideProvider from "../../context/theme";
+import { LanguageProvider } from "@/context/translations";
 
 describe("header mobile", () => {
   jest.mock("../../hooks/useWindowSize", () => ({
@@ -13,7 +14,9 @@ describe("header mobile", () => {
     window.dispatchEvent(new Event("resize"));
     render(
       <ClientSideProvider>
-        <Header />
+        <LanguageProvider>
+          <Header />
+        </LanguageProvider>
       </ClientSideProvider>,
     );
   });
