@@ -29,7 +29,7 @@ export const HeaderContent = styled.div<HeaderProps>`
   }
 `;
 
-export const IconContainer = styled.div`
+export const IconContainer = styled.nav`
   display: flex;
   align-items: center;
 `;
@@ -38,6 +38,10 @@ export const IconLink = styled.a`
   margin-right: ${({ theme }) => theme.sizes.spacing.xmd};
   &:last-child {
     margin-right: 0;
+  }
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
+    margin-right: 0;
+    height: 24px;
   }
 `;
 
@@ -53,7 +57,7 @@ export const HeaderLogo = styled.h1<HeaderProps>`
   }
 `;
 
-export const LinksContainer = styled.nav`
+export const LinksContainer = styled.article`
   display: flex;
   align-items: center;
   gap: ${({ theme }) => theme.sizes.fonts.ssm};

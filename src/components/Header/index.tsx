@@ -24,7 +24,7 @@ const Header = () => {
   const { language, setLanguage } = useLanguage();
 
   useEffect(() => {
-    const mobile = width <= 480;
+    const mobile = width <= 630;
     setIsMobile(mobile);
     if (!mobile) {
       setOpenMenu(false);
@@ -46,12 +46,12 @@ const Header = () => {
 
         <IconContainer>
           {isMobile ? (
-            <IconLink data-testid="menu" onClick={() => setOpenMenu((prev) => !prev)}>
-              <LinksContainer>
+            <LinksContainer>
+              <IconLink data-testid="menu" onClick={() => setOpenMenu((prev) => !prev)}>
                 <Icon name={openMenu ? "CloseMenu" : "MenuHamburguer"} />
-                <LangagueSwicher onClick={changeLanguage}>{language === "pt" ? "🇧🇷" : "🇺🇸"}</LangagueSwicher>
-              </LinksContainer>
-            </IconLink>
+              </IconLink>
+              <LangagueSwicher onClick={changeLanguage}>{language === "pt" ? "🇧🇷" : "🇺🇸"}</LangagueSwicher>
+            </LinksContainer>
           ) : (
             <>
               <IconLink href="https://github.com/matheus-wallace" data-testid="githubIcon" target="_blank">
