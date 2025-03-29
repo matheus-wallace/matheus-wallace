@@ -15,6 +15,7 @@ export const darkTheme: DefaultTheme = {
     softGray: "#3D3D3D",
     lightGray: "#191919",
     darkGray: "#141414",
+    darkBlue: "#111118",
   },
   sizes: {
     fonts: {
@@ -46,6 +47,7 @@ export const darkTheme: DefaultTheme = {
     mobile: "max-width: 630px",
     tablet: "max-width: 875px",
     desktop: "max-width: 1024px",
+    desktopNumber: 1024,
   },
 };
 

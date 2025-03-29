@@ -9,10 +9,11 @@ import Image from "next/image";
 import { FormattedText } from "@/components/StrongBlueText";
 import Title from "@/components/Title";
 
+import TechList from "@/components/TechList";
+
 export default function Home() {
   const { t } = useLanguage();
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
-
   useEffect(() => {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth < 1024);
@@ -65,6 +66,7 @@ export default function Home() {
 
             <TechArticle>
               <Subtitle title={t("techs")} />
+              <TechList />
             </TechArticle>
           </InfoContainer>
           {!isMobile && (

@@ -14,6 +14,10 @@ export const SectionHomeContainer = styled.section`
   align-items: center;
   gap: 5rem;
 
+  h1 {
+    margin-bottom: ${({ theme }) => theme.sizes.spacing.sm};
+  }
+
   @media (${({ theme }) => theme.breakpoints.desktop}) {
     flex-direction: column;
     justify-content: center;
