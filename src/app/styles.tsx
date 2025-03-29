@@ -5,7 +5,7 @@ export const HomeContainer = styled.main`
   padding: ${({ theme }) => theme.sizes.spacing.xxlg};
 
   @media (${({ theme }) => theme.breakpoints.tablet}) {
-    padding: ${({ theme }) => theme.sizes.spacing.lg} 0;
+    padding: 0;
   }
 `;
 
@@ -22,7 +22,8 @@ export const SectionHomeContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 2rem h1 {
+    gap: 2rem;
+    h1 {
       margin-bottom: ${({ theme }) => theme.sizes.spacing.sm};
     }
   }
