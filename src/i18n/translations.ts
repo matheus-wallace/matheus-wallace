@@ -1,16 +1,18 @@
-// i18n/translations.ts
+import updateAge from "@/utils/updateAge";
+
+const age = updateAge();
 export const translations = {
-  firstTranslation: {
-    pt: "Olá, meu nome é Matheus Wallace",
-    en: "Hello, my name is Matheus Wallace",
+  aboutMeTitle: {
+    pt: "Sobre mim",
+    en: "About Me",
   },
-  welcome: {
-    pt: "Bem-vindo",
-    en: "Welcome",
+  aboutMeDescription: {
+    pt: `Olá, meu nome é @@Matheus@@ e tenho @@${age} anos@@, em @@2018@@ conheci o mundo da @@engenharia de software@@ e atualmente trabalhando como desenvolvedor full stack na @@Solistica@@,  @@análise e desenvolvimento de sistemas@@. Meu objetivo é realizar a transição de carreira e me tornar um @@desenvolvedor front-end@@.`,
+    en: `Hello, my name is @@Matheus@@ and I'm @@${age} years old@@. In @@2018@@, I discovered the world of @@software engineering@@, and I'm currently pursuing a degree in @@Systems Analysis and Development@@. My goal is to transition careers and become a @@front-end developer@@.`,
   },
-  goodbye: {
-    pt: "Adeus",
-    en: "Goodbye",
+  techs: {
+    pt: "Tecnologias",
+    en: `Technology's`,
   },
 } as const;
 

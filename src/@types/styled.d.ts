@@ -7,13 +7,18 @@ declare module "styled-components" {
       detailBlue: string;
       white: string;
       gray: string;
+      softGray: string;
+      lightGray: string;
+      darkGray: string;
     };
     sizes: {
       fonts: {
         ssm: string;
         sm: string;
         md: string;
+        xmd: string;
         lg: string;
+        xlg: string;
       };
       spacing: {
         sm: string;
@@ -25,6 +30,7 @@ declare module "styled-components" {
         lg: string;
         xxlg: string;
         xxxlg: string;
+        paddingHome: string;
       };
     };
     weights: {

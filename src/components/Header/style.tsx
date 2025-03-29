@@ -59,10 +59,11 @@ export const LinksContainer = styled.nav`
   gap: ${({ theme }) => theme.sizes.fonts.ssm};
 `;
 
-export const LangagueSwicher = styled.span`
-  font-size: ${({ theme }) => theme.sizes.fonts.lg};
+export const LangagueSwicher = styled.button`
+  font-size: ${({ theme }) => theme.sizes.fonts.md};
   cursor: pointer;
-
+  border: none;
+  background-color: transparent;
   @media (${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ theme }) => theme.sizes.fonts.md};
   }
