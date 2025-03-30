@@ -11,6 +11,11 @@ import typescript from "@/assets/icons/typescript-desktop.svg";
 import react from "@/assets/icons/react-desktop.svg";
 import figma from "@/assets/icons/figma-desktop.svg";
 import brainDesktop from "@/assets/icons/brain-desktop.svg";
+import solisticaLogo from "@/assets/icons/solistica-desktop.svg";
+import dice1 from "@/assets/icons/dice1-desktop.svg";
+import dice2 from "@/assets/icons/dice2-desktop.svg";
+import dice3 from "@/assets/icons/dice3-desktop.svg";
+import dice4 from "@/assets/icons/dice4-desktop.svg";
 
 const iconMap = {
   Linkedin,
@@ -26,6 +31,11 @@ const iconMap = {
   react,
   figma,
   brainDesktop,
+  solisticaLogo,
+  dice1,
+  dice2,
+  dice3,
+  dice4,
 };
 
 export default iconMap;
