@@ -28,4 +28,16 @@ export const TabButton = styled.button<{ $isActive: boolean }>`
   &:hover {
     color: ${({ theme }) => theme.colors.lightPurple};
   }
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
+    border-bottom: 0;
+    padding: ${({ $isActive }) => ($isActive ? "0.7rem 1rem" : "0")};
+    background-color: ${({ $isActive, theme }) => ($isActive ? theme.colors.backgroundColorSoft : "")};
+    border-radius: ${({ theme }) => theme.sizes.spacing.sm};
+    color: ${({ $isActive, theme }) => ($isActive ? theme.colors.lightPurple : theme.colors.darkPurple)};
+  }
+`;
+
+export const TabContent = styled.div`
+  padding: 0 0.5rem;
+  min-height: 300px;
 `;

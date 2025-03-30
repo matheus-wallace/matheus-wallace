@@ -40,7 +40,7 @@ export default function Home() {
           <SectionHomeContainer>
             <InfoContainer>
               <Subtitle title={t("aboutMeTitle")} />
-              <Title text="Matheus Wallace da Silva Pereira" />
+              <Title>Matheus Wallace da Silva Pereira</Title>
               <FormattedText text={t("aboutMeDescription")} />
               <TechArticle>
                 <Subtitle title={t("techs")} />
@@ -69,7 +69,7 @@ export default function Home() {
                 />
               </PictureContainer>
             )}
-            <Title text="Matheus Wallace da Silva Pereira" />
+            <Title>Matheus Wallace da Silva Pereira</Title>
             <FormattedText text={t("aboutMeDescription")} />
 
             <TechArticle>

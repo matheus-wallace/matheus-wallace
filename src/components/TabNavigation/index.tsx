@@ -1,7 +1,8 @@
 import { useLanguage } from "@/context/translations";
 import { useState } from "react";
-import styled from "styled-components";
-import { TabButton, TabButtons, TabsContainer } from "./styles";
+import { TabButton, TabButtons, TabContent, TabsContainer } from "./styles";
+import Expericence from "../Experience";
+import TitleWithIcon from "../TitleWithIcon";
 
 type TabType = "formation" | "contact" | "experience" | "projects";
 
@@ -30,24 +31,13 @@ const TabsNavigation = () => {
       </TabButtons>
 
       <TabContent>
-        {activeTab === "contact" && <ContatoContent />}
-        {activeTab === "experience" && <ExperienciaContent />}
-        {activeTab === "projects" && <ProjetosContent />}
+        {activeTab === "formation" && <TitleWithIcon nameIcon="Linkedin" text="teste1" />}
+        {activeTab === "contact" && <TitleWithIcon nameIcon="Linkedin" text="teste2" />}
+        {activeTab === "experience" && <Expericence />}
+        {activeTab === "projects" && <TitleWithIcon nameIcon="Linkedin" text="teste3" />}
       </TabContent>
     </TabsContainer>
   );
 };
-
-// 3. Componentes de Conteúdo (exemplos)
-const ContatoContent = () => <div>Formulário de contato...</div>;
-const ExperienciaContent = () => <div>Histórico profissional...</div>;
-const ProjetosContent = () => <div>Portfólio de trabalhos...</div>;
-
-// 4. Estilos com styled-components
-
-const TabContent = styled.div`
-  padding: 0 0.5rem;
-  min-height: 300px;
-`;
 
 export default TabsNavigation;
