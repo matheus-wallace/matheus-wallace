@@ -31,10 +31,10 @@ const TabsNavigation = () => {
       </TabButtons>
 
       <TabContent>
-        {activeTab === "formation" && <TitleWithIcon nameIcon="Linkedin" text="teste1" />}
-        {activeTab === "contact" && <TitleWithIcon nameIcon="Linkedin" text="teste2" />}
+        {activeTab === "formation" && <TitleWithIcon iconName="Linkedin" text="teste1" />}
+        {activeTab === "contact" && <TitleWithIcon iconName="Linkedin" text="teste2" />}
         {activeTab === "experience" && <Expericence />}
-        {activeTab === "projects" && <TitleWithIcon nameIcon="Linkedin" text="teste3" />}
+        {activeTab === "projects" && <TitleWithIcon iconName="Linkedin" text="teste3" />}
       </TabContent>
     </TabsContainer>
   );
