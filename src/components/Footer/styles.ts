@@ -10,7 +10,6 @@ export const FooterContainer = styled.p`
   padding: 20px;
   font-weight: ${({ theme }) => theme.weights.bold};
   margin-top: auto;
-
   @media (${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ theme }) => theme.sizes.fonts.ssm};
   }
