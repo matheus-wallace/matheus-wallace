@@ -4,7 +4,10 @@ export const HomeContainer = styled.main`
   justify-content: center;
   padding: ${({ theme }) => theme.sizes.spacing.xxlg};
 
-  @media (${({ theme }) => theme.breakpoints.tablet}) {
+  @media (min-width: 631px) and (max-width: 1023px) {
+    padding-top: 50px;
+  }
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
     padding: 0;
   }
 `;
@@ -69,13 +72,6 @@ export const PictureContainer = styled.article`
 
   @media (${({ theme }) => theme.breakpoints.tablet}) {
     justify-self: center;
-  }
-
-  @media (${({ theme }) => theme.breakpoints.mobile}) {
-    img {
-      width: clamp(150px, 10vw, 400px);
-      height: clamp(150px, 10vw, 400px);
-    }
   }
 `;
 
