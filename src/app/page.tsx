@@ -2,7 +2,14 @@
 
 import { useEffect, useState } from "react";
 import Center from "@/components/Center";
-import { HomeContainer, InfoContainer, PictureContainer, SectionHomeContainer, TechArticle } from "./styles";
+import {
+  HomeContainer,
+  InfoContainer,
+  PictureContainer,
+  SectionHomeContainer,
+  SectionNavigatorContainer,
+  TechArticle,
+} from "./styles";
 import { useLanguage } from "@/context/translations";
 import Subtitle from "@/components/Subtitle";
 import Image from "next/image";
@@ -10,6 +17,7 @@ import { FormattedText } from "@/components/StrongBlueText";
 import Title from "@/components/Title";
 
 import TechList from "@/components/TechList";
+import TabsNavigation from "@/components/TabNavigation";
 
 export default function Home() {
   const { t } = useLanguage();
@@ -82,6 +90,9 @@ export default function Home() {
           )}
         </SectionHomeContainer>
       </Center>
+      <SectionNavigatorContainer>
+        <TabsNavigation />
+      </SectionNavigatorContainer>
     </HomeContainer>
   );
 }

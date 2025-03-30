@@ -1,15 +1,9 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.main`
+export const HomeContainer = styled.section`
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: ${({ theme }) => theme.sizes.spacing.xxlg};
-
-  @media (min-width: 631px) and (max-width: 1023px) {
-    padding-top: 50px;
-  }
-  @media (${({ theme }) => theme.breakpoints.mobile}) {
-    padding: 0;
-  }
 `;
 
 export const SectionHomeContainer = styled.section`
@@ -19,6 +13,15 @@ export const SectionHomeContainer = styled.section`
 
   h1 {
     margin-bottom: ${({ theme }) => theme.sizes.spacing.sm};
+  }
+
+  padding: ${({ theme }) => theme.sizes.spacing.xxlg};
+
+  @media (min-width: 631px) and (max-width: 1023px) {
+    padding-top: 50px;
+  }
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
+    padding: 0;
   }
 
   @media (${({ theme }) => theme.breakpoints.desktop}) {
@@ -72,6 +75,16 @@ export const PictureContainer = styled.article`
 
   @media (${({ theme }) => theme.breakpoints.tablet}) {
     justify-self: center;
+  }
+`;
+
+export const SectionNavigatorContainer = styled.section`
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
+  padding: ${({ theme }) => theme.sizes.spacing.xxlg};
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
+    border-top-left-radius: ${({ theme }) => theme.sizes.spacing.xmd};
+    border-top-right-radius: ${({ theme }) => theme.sizes.spacing.xmd};
+    padding: ${({ theme }) => theme.sizes.spacing.lg};
   }
 `;
 

@@ -17,6 +17,8 @@ export const darkTheme: DefaultTheme = {
     darkGray: "#141414",
     darkBlue: "#111118",
     black: "#111111",
+    darkPurple: "#4C5268",
+    lightPurple: "#89A1F7",
   },
   sizes: {
     fonts: {

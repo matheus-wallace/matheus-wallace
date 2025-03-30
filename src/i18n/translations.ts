@@ -14,6 +14,22 @@ export const translations = {
     pt: "Tecnologias",
     en: `Technology's`,
   },
+  contact: {
+    pt: "Contato",
+    en: `Contact`,
+  },
+  experience: {
+    pt: "Experiência",
+    en: `Experience`,
+  },
+  formation: {
+    pt: "Formação",
+    en: `Qualification`,
+  },
+  projects: {
+    pt: "Projetos",
+    en: `Projects`,
+  },
 } as const;
 
 export type TranslationKeys = keyof typeof translations;
