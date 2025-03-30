@@ -4,6 +4,7 @@ declare module "styled-components" {
   export interface DefaultTheme {
     colors: {
       backgroundColor: string;
+      backgroundColorSoft: string;
       detailBlue: string;
       white: string;
       gray: string;
@@ -25,6 +26,7 @@ declare module "styled-components" {
         xlg: string;
       };
       spacing: {
+        ssm: string;
         sm: string;
         xsm: string;
         md: string;

@@ -10,6 +10,7 @@ import javascript from "@/assets/icons/javascript-desktop.svg";
 import typescript from "@/assets/icons/typescript-desktop.svg";
 import react from "@/assets/icons/react-desktop.svg";
 import figma from "@/assets/icons/figma-desktop.svg";
+import brainDesktop from "@/assets/icons/brain-desktop.svg";
 
 const iconMap = {
   Linkedin,
@@ -24,6 +25,7 @@ const iconMap = {
   typescript,
   react,
   figma,
+  brainDesktop,
 };
 
 export default iconMap;

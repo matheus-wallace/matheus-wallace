@@ -9,6 +9,7 @@ interface ClientSideProviderProps {
 export const darkTheme: DefaultTheme = {
   colors: {
     backgroundColor: "#111118",
+    backgroundColorSoft: "#191924",
     detailBlue: "#006688",
     white: "#FFFFFF",
     gray: "#262626",
@@ -30,6 +31,7 @@ export const darkTheme: DefaultTheme = {
       xlg: "4.5rem",
     },
     spacing: {
+      ssm: ".7010rem",
       sm: ".7080rem",
       xsm: ".80rem",
       md: "1rem",
