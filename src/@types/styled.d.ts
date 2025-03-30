@@ -12,6 +12,8 @@ declare module "styled-components" {
       darkGray: string;
       darkBlue: string;
       black: string;
+      darkPurple: string;
+      lightPurple: string;
     };
     sizes: {
       fonts: {
