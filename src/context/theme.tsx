@@ -16,6 +16,7 @@ export const darkTheme: DefaultTheme = {
     lightGray: "#191919",
     darkGray: "#141414",
     darkBlue: "#111118",
+    black: "#111111",
   },
   sizes: {
     fonts: {

@@ -3,6 +3,7 @@ import "./globals.css";
 import ClientSideProvider from "@/context/theme";
 import Header from "@/components/Header";
 import { LanguageProvider } from "@/context/translations";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Matheus Wallace | Full Stack Developer",
@@ -24,7 +25,8 @@ export default function RootLayout({
         <ClientSideProvider>
           <LanguageProvider>
             <Header />
-            {children}
+            <main style={{ flex: 1 }}>{children}</main>
+            <Footer />
           </LanguageProvider>
         </ClientSideProvider>
       </body>

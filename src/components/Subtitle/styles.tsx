@@ -16,7 +16,7 @@ export const SubtitleContainer = styled.h2`
     background-color: ${({ theme }) => theme.colors.detailBlue};
   }
 
-  @media (${({ theme }) => theme.breakpoints.mobile}) {
+  @media (${({ theme }) => theme.breakpoints.desktop}) {
     font-size: ${({ theme }) => theme.sizes.fonts.md};
     font-weight: ${({ theme }) => theme.weights.bold};
     &::after,

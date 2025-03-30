@@ -4,8 +4,11 @@ export const HomeContainer = styled.main`
   justify-content: center;
   padding: ${({ theme }) => theme.sizes.spacing.xxlg};
 
-  @media (${({ theme }) => theme.breakpoints.tablet}) {
-    padding: ${({ theme }) => theme.sizes.spacing.lg} 0;
+  @media (min-width: 631px) and (max-width: 1023px) {
+    padding-top: 50px;
+  }
+  @media (${({ theme }) => theme.breakpoints.mobile}) {
+    padding: 0;
   }
 `;
 
@@ -22,7 +25,8 @@ export const SectionHomeContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 2rem h1 {
+    gap: 2rem;
+    h1 {
       margin-bottom: ${({ theme }) => theme.sizes.spacing.sm};
     }
   }
@@ -68,13 +72,6 @@ export const PictureContainer = styled.article`
 
   @media (${({ theme }) => theme.breakpoints.tablet}) {
     justify-self: center;
-  }
-
-  @media (${({ theme }) => theme.breakpoints.mobile}) {
-    img {
-      width: clamp(150px, 10vw, 400px);
-      height: clamp(150px, 10vw, 400px);
-    }
   }
 `;
 
