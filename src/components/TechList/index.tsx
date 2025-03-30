@@ -13,25 +13,38 @@ const TechList = () => {
     <TechContainer>
       <ul style={{ padding: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
         <li>
-          <Techs name="html" />
+          <Techs name="typescript" />
         </li>
 
         <li>
-          <Techs name="css" />
+          <Techs name="react" />
+        </li>
+
+        <li>
+          <Techs name="nextJS" />
         </li>
         <li>
-          <Techs name="javascript" />
+          <Techs name="nodeJS" />
+        </li>
+        <li>
+          <Techs name="prisma" />
         </li>
       </ul>
       <ul style={{ padding: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
         <li>
-          <Techs name="typescript" />
+          <Techs name="laravel" />
         </li>
         <li>
-          <Techs name="react" />
+          <Techs name="docker" />
         </li>
         <li>
           <Techs name="figma" />
+        </li>
+        <li>
+          <Techs name="jest" />
+        </li>
+        <li>
+          <Techs name="mysql" />
         </li>
       </ul>
     </TechContainer>

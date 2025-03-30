@@ -4,9 +4,13 @@ import MenuHamburguer from "@/assets/icons/humburger.svg";
 import CloseMenu from "@/assets/icons/close-menu-mobile.svg";
 import GithubMobile from "@/assets/icons/github-mobile.svg";
 import LinkedinMobile from "@/assets/icons/linkedin-mobile.svg";
-import html from "@/assets/icons/html-desktop.svg";
-import css from "@/assets/icons/css-desktop.svg";
-import javascript from "@/assets/icons/javascript-desktop.svg";
+import docker from "@/assets/icons/docker.svg";
+import nextJS from "@/assets/icons/nextjs.svg";
+import nodeJS from "@/assets/icons/nodejs.svg";
+import jest from "@/assets/icons/jest.svg";
+import mysql from "@/assets/icons/mysql.svg";
+import prisma from "@/assets/icons/prisma.svg";
+import laravel from "@/assets/icons/laravel.svg";
 import typescript from "@/assets/icons/typescript-desktop.svg";
 import react from "@/assets/icons/react-desktop.svg";
 import figma from "@/assets/icons/figma-desktop.svg";
@@ -24,9 +28,13 @@ const iconMap = {
   CloseMenu,
   GithubMobile,
   LinkedinMobile,
-  html,
-  javascript,
-  css,
+  docker,
+  laravel,
+  prisma,
+  nextJS,
+  mysql,
+  jest,
+  nodeJS,
   typescript,
   react,
   figma,
